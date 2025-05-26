@@ -9,10 +9,17 @@ go build -o go-wrk main.go
 ```
 Flags:
 -u         target URL (supports http/https)
+
 -t         number of concurrent workers (default 10)
+
 -c         max idle connections per worker (default 100)
+
 -d         test duration, e.g. 10s, 1m (default 10s)
+
 -insecure  skip TLS certificate verification (default false)
+
 -min       histogram min latency µs (default 1)
+
 -max       histogram max latency µs (default 10000000)
+
 -sigfigs   histogram precision significant figures (default 3)
